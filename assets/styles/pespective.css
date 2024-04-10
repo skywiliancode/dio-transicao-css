@@ -12,28 +12,11 @@ body{
 }
 
 .box{
+  background: linear-gradient(90deg, #FC4668 0%, #3F5EFB 100%);
   height: 200px;
   width: 200px;
   border-radius: 8px;
   position: absolute;
-}
-
-.box:nth-child(1){
-  background: linear-gradient(90deg, #FC4668 0%, #3F5EFB 100%);
-}
-
-.box:nth-child(2){
-  background: linear-gradient(90deg, #3F5EFB 0%, #FC4668 100%);
-  
-}
-
-.box:nth-child(1){
-  transform: rotateY(20deg);
-  transition: 1.2s;
-}
-
-.box:nth-child(2){
-  transform: rotateY(-20deg);
-  transition: 1.2s;
+  transform: matrix3d();
 }
 
