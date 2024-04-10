@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transição</title>
+
+  <link rel="stylesheet" href="./assets/styles/index.css">
+</head>
+
+<script>
+  function transforma(id){
+    const box = document.querySelector('.box')
+
+    if(id == 'rotate'){
+      box.style.transform = 'rotate(45deg)'
+    }else if(id == 'scale'){
+      box.style.transform ='scale(2)'
+    }else if(id == 'skew'){
+      box.style.transform ='skewx(20deg)'
+    }else if(id == 'translate'){
+      box.style.transform ='translate(0px, 15px)'
+    }
+  }
+</script>
+
+<body>
+  <div class="container">
+    <div class="box"></div>
+    <div class="acoes">
+      <button id="rotate" onclick="transforma(id)" >Rotate</button>
+      <button id="scale" onclick="transforma(id)">Scale</button>
+      <button id="skew" onclick="transforma(id)">Skew</button>
+      <button id="translate" onclick="transforma(id)">Translate</button>
+    </div>
+  </div>
+</body>
+</html>
