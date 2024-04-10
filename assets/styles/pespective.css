@@ -6,7 +6,6 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  perspective: 100px;
 }
 
 .box{
@@ -14,5 +13,11 @@ body{
   height: 200px;
   width: 200px;
   border-radius: 8px;
-  transform: rotateX(45deg);
 }
+
+.box:hover{
+  transform-origin: top left;
+  transform: rotateZ(45deg);
+  transition: 1.2s;
+}
+
