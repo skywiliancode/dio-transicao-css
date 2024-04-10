@@ -6,9 +6,11 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  perspective: 200px;
-  perspective-origin: top;
-  transform-style: preserve-3d;
+}
+
+p{
+  color: #FFF;
+  text-align: center;
 }
 
 .box{
@@ -17,6 +19,7 @@ body{
   width: 200px;
   border-radius: 8px;
   position: absolute;
-  transform: matrix3d();
+  transform: rotateY(10deg);
+  backface-visibility: hidden;
 }
 
