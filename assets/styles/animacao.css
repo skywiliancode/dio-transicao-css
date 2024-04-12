@@ -23,8 +23,9 @@ body{
   transition: 0.7s;
   animation-name: exemplo;
   animation-duration: 3s;
-  animation-iteration-count: infinite;
+  /* animation-iteration-count: infinite; */
   animation-direction: alternate;
+  animation-fill-mode: forwards;
 }
 
 @keyframes exemplo {
