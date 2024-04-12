@@ -23,9 +23,13 @@ body{
   transition: 0.7s;
   animation-name: exemplo;
   animation-duration: 3s;
-  /* animation-iteration-count: infinite; */
+  animation-iteration-count: infinite;
   animation-direction: alternate;
-  animation-fill-mode: forwards;
+  /* animation-fill-mode: forwards; */
+}
+
+.box:hover{
+  animation-play-state: paused;
 }
 
 @keyframes exemplo {
